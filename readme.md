@@ -12,6 +12,8 @@ It analyzes when a card enters and exits the "Doing" list and shows the total du
 - Toplam süreyi gösterir / Displays total duration
 - Sonuçları Markdown formatında panoya kopyalayabilirsin / You can copy the results to your clipboard in Markdown format
 
+<img src="screenshots/1.png" alt="screenshot.png" width="400" style="display:inline-block; margin: 10px;" />
+
 ## 📥 Kurulum / 📥 Installation
 
 1. Bu repo’yu bilgisayarına klonla veya indir / Clone or download this repo to your computer:
