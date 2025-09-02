@@ -16,7 +16,7 @@ It analyzes when a card enters and exits the "Doing" list and shows the total du
 
 1. Bu repo’yu bilgisayarına klonla veya indir / Clone or download this repo to your computer:
    ```bash
-   git clone https://github.com/kullaniciadi/trello-sure-hesaplayici.git
+   git clone https://github.com/hulusimsek/trello-sure-hesaplayici.git
    ```
 
 2. Chrome’da chrome://extensions/ sayfasına git / Go to chrome://extensions/ in Chrome.
