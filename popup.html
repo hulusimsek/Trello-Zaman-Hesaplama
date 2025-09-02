@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body {
+            width: 450px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 12px;
+            background: #0079bf;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 15px;
+        }
+        button:hover {
+            background: #005a8b;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .button-group button {
+            flex: 1;
+        }
+        .btn-copy {
+            background: #28a745;
+        }
+        .btn-copy:hover {
+            background: #218838;
+        }
+        .loading {
+            text-align: center;
+            color: #666;
+            padding: 20px;
+        }
+        .error {
+            color: #d32f2f;
+            background: #ffebee;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .result {
+            margin-top: 15px;
+        }
+        .total {
+            background: #e3f2fd;
+            padding: 12px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .session {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .session-header {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #0079bf;
+        }
+        .session-time {
+            color: #666;
+            font-size: 14px;
+            margin: 2px 0;
+        }
+        .session-duration {
+            color: #2e7d32;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .no-data {
+            text-align: center;
+            color: #666;
+            font-style: italic;
+            padding: 20px;
+        }
+        .copy-success {
+            color: #28a745;
+            text-align: center;
+            font-size: 12px;
+            margin-top: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>🕒 Trello Süre Hesaplayıcı</h2>
+        <p>Karttaki çalışma süresini hesaplar</p>
+    </div>
+
+    <div class="button-group">
+        <button id="hesaplaBtn">Süreyi Hesapla</button>
+        <button id="kopyalaBtn" class="btn-copy" disabled>Panoya Kopyala</button>
+    </div>
+    
+    <div id="loading" class="loading" style="display: none;">
+        Hesaplanıyor...
+    </div>
+    
+    <div id="error" class="error" style="display: none;"></div>
+    
+    <div id="result" class="result" style="display: none;"></div>
+
+    <div id="copySuccess" class="copy-success">✓ Kopyalandı!</div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
